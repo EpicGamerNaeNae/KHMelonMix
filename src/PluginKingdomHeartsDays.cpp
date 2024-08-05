@@ -38,7 +38,7 @@ u32 PluginKingdomHeartsDays::jpGamecode = 1246186329;
 #define CUTSCENE_ADDRESS_JP_REV1 0x02093A4C // TODO: KH
 
 #define CUTSCENE_ADDRESS_2_US      0x02093A94
-#define CUTSCENE_ADDRESS_2_EU      0x02093A94 // TODO: KH
+#define CUTSCENE_ADDRESS_2_EU      0x02093AB4 // TODO: KH
 #define CUTSCENE_ADDRESS_2_JP      0x02093A94 // TODO: KH
 #define CUTSCENE_ADDRESS_2_JP_REV1 0x02093A94 // TODO: KH
 
@@ -84,52 +84,85 @@ enum
 CutsceneEntry Cutscenes[] =
 {
      // still couldn't find a proper way to detect the opening from the Theater
-    {"802",    "802_opening",                       0x088b2e00, 0x088b2e00, 0x088b2e00}, // lacks EU, JP
+    {"802",    "802_opening",                       0x088b2e00, 0x08B3D400, 0x088b2e00}, // lacks JP
     {"803",    "803_meet_xion",                     0x0987ec00, 0x09b09200, 0x0987ec00}, // lacks JP
     {"804",    "804_roxas_recusant_sigil",          0x09ae9400, 0x09ae9400, 0x09ae9400}, // lacks EU, JP
-    {"805",    "805_the_dark_margin",               0x09b80600, 0x09b80600, 0x09b80600}, // lacks EU, JP
+    {"805",    "805_the_dark_margin",               0x09b80600, 0x09E0AC00, 0x09b80600}, // lacks JP
     {"806",    "806_sora_entering_pod",             0x09e83800, 0x09e83800, 0x09e83800}, // lacks EU, JP
     {"808",    "808_sunset_memory",                 0x09f24c00, 0x09f24c00, 0x09f24c00}, // lacks EU, JP
     {"809",    "809_xions_defeat",                  0x09f79400, 0x09f79400, 0x09f79400}, // lacks EU, JP
-    {"810",    "810_the_main_in_black_reflects",    0x09ff8000, 0x09ff8000, 0x09ff8000}, // lacks EU, JP
-    {"813",    "813_xions_defeat",                  0x0a13f600, 0x0a13f600, 0x0a13f600}, // lacks EU, JP
+    {"810",    "810_the_main_in_black_reflects",    0x09ff8000, 0x0A282600, 0x09ff8000}, // lacks JP
+    {"813",    "813_xions_defeat",                  0x0a13f600, 0x0A3C9C00, 0x0a13f600}, // lacks JP
     {"814",    "814_sora_walk",                     0x0a677c00, 0x0a677c00, 0x0a677c00}, // lacks EU, JP
     {"815",    "815_sora_release_kairi",            0x0a6e4200, 0x0a6e4200, 0x0a6e4200}, // lacks EU, JP
     {"816",    "816_kairi_memories",                0x0a7a9200, 0x0a7a9200, 0x0a7a9200}, // lacks EU, JP
-    {"817",    "817_namine_and_diz",                0x0a857600, 0x0a857600, 0x0a857600}, // lacks EU, JP
+    {"817",    "817_namine_and_diz",                0x0a857600, 0x0AAE1C00, 0x0a857600}, // lacks JP
     {"818",    "818_why_the_sun_sets_red",          0x0ab4be00, 0x0add6400, 0x0ab4be00}, // lacks JP
     {"819",    "819_sora_wakes_up",                 0x0afeac00, 0x0afeac00, 0x0afeac00}, // double cutscene complement
-    {"821",    "821_snarl_of_memories",             0x0b043e00, 0x0b043e00, 0x0b043e00}, // lacks EU, JP
-    {"822",    "822_riku_takes_care_of_xion",       0x0b514600, 0x0b514600, 0x0b514600}, // lacks EU, JP
-    {"823",    "823_roxas_passes_by",               0x0b5b5e00, 0x0b5b5e00, 0x0b5b5e00}, // lacks EU, JP
-    {"824",    "824_xions_dream",                   0x0b65a200, 0x0b65a200, 0x0b65a200}, // lacks EU, JP
-    {"825",    "825_xions_capture",                 0x0b8a7a00, 0x0b8a7a00, 0x0b8a7a00}, // lacks EU, JP
+    {"821",    "821_snarl_of_memories",             0x0b043e00, 0x0B2CE400, 0x0b043e00}, // lacks JP
+    {"822",    "822_riku_takes_care_of_xion",       0x0b514600, 0x0B79EC00, 0x0b514600}, // lacks JP
+    {"823",    "823_roxas_passes_by",               0x0b5b5e00, 0x0B840400, 0x0b5b5e00}, // lacks JP
+    {"824",    "824_xions_dream",                   0x0b65a200, 0x0B8E4800, 0x0b65a200}, // lacks JP
+    {"825",    "825_xions_capture",                 0x0b8a7a00, 0x0BB32000, 0x0b8a7a00}, // lacks JP
     {"826",    "826_hollow_bastion_memories",       0x0bd74600, 0x0bd74600, 0x0bd74600}, // lacks EU, JP
     {"827",    "827_agrabah_keyhole_memory",        0x0be7e000, 0x0be7e000, 0x0be7e000}, // lacks EU, JP
-    {"828",    "828_xion_and_riku",                 0x0bedf200, 0x0bedf200, 0x0bedf200}, // lacks EU, JP
-    {"829",    "829_rikus_resolve",                 0x0c76a800, 0x0c76a800, 0x0c76a800}, // lacks EU, JP
-    {"830",    "830_mickey_and_riku_ansem",         0x0c863a00, 0x0c863a00, 0x0c863a00}, // lacks EU, JP
-    {"831",    "831_xion_and_namine",               0x0ca47c00, 0x0ca47c00, 0x0ca47c00}, // lacks EU, JP
-    {"832",    "832_xion_and_axel_face_off",        0x0cb01c00, 0x0cb01c00, 0x0cb01c00}, // lacks EU, JP
-    {"833",    "833_xion_attacks",                  0x0cee2000, 0x0cee2000, 0x0cee2000}, // lacks EU, JP
-    {"834",    "834_winner",                        0x0d45bc00, 0x0d45bc00, 0x0d45bc00}, // lacks EU, JP
-    {"835",    "835_skyscrapper_battle",            0x0d5e0400, 0x0d5e0400, 0x0d5e0400}, // lacks EU, JP
-    {"836",    "836_roxas_and_riku",                0x0d6f9400, 0x0d6f9400, 0x0d6f9400}, // lacks EU, JP
-    {"837",    "837_riku_turns_into_ansem",         0x0da1ea00, 0x0da1ea00, 0x0da1ea00}, // lacks EU, JP
+    {"828",    "828_xion_and_riku",                 0x0bedf200, 0x0C169800, 0x0bedf200}, // lacks JP
+    {"829",    "829_rikus_resolve",                 0x0c76a800, 0x0C9F4E00, 0x0c76a800}, // lacks JP
+    {"830",    "830_mickey_and_riku_ansem",         0x0c863a00, 0x0CAEE000, 0x0c863a00}, // lacks JP
+    {"831",    "831_xion_and_namine",               0x0ca47c00, 0x0CCD2200, 0x0ca47c00}, // lacks JP
+    {"832",    "832_xion_and_axel_face_off",        0x0cb01c00, 0x0CD8C200, 0x0cb01c00}, // lacks JP
+    {"833",    "833_xion_attacks",                  0x0cee2000, 0x0D16C600, 0x0cee2000}, // lacks JP
+    {"834",    "834_winner",                        0x0d45bc00, 0x0D6E6200, 0x0d45bc00}, // lacks JP
+    {"835",    "835_skyscrapper_battle",            0x0d5e0400, 0x0D86AA00, 0x0d5e0400}, // lacks JP
+    {"836",    "836_roxas_and_riku",                0x0d6f9400, 0x0D983A00, 0x0d6f9400}, // lacks JP
+    {"837",    "837_riku_turns_into_ansem",         0x0da1ea00, 0x0DCA9000, 0x0da1ea00}, // lacks JP
     {"838",    "838_clocktower",                    0x0e063600, 0x0e063600, 0x0e063600}, // double cutscene complement
     {"839_de", "839_riku_please_stop_him_de",       0x0e0db400, 0x0e0db400, 0x0e0db400}, // double cutscene complement
     {"839_en", "839_riku_please_stop_him_en",       0x0e0e1200, 0x0e0e1200, 0x0e0e1200}, // double cutscene complement
     {"839_es", "839_riku_please_stop_him_es",       0x0e0e6c00, 0x0e0e6c00, 0x0e0e6c00}, // double cutscene complement
     {"839_fr", "839_riku_please_stop_him_fr",       0x0e0ecc00, 0x0e0ecc00, 0x0e0ecc00}, // double cutscene complement
     {"839_it", "839_riku_please_stop_him_it",       0x0e0f1600, 0x0e0f1600, 0x0e0f1600}, // double cutscene complement
-    {"840",    "840_after_the_battle",              0x0e0f5e00, 0x0e0f5e00, 0x0e0f5e00}, // lacks EU, JP
+    {"840",    "840_after_the_battle",              0x0e0f5e00, 0x0E380400, 0x0e0f5e00}, // lacks JP
     {"841",    "841_xion_fading_from_clocktower",   0x0e444c00, 0x0e444c00, 0x0e444c00}, // double cutscene complement
-    {"842",    "842_a_new_day",                     0x0e4bd400, 0x0e4bd400, 0x0e4bd400}, // lacks EU, JP
-    {"843",    "843_the_usual_spot",                0x0e641200, 0x0e641200, 0x0e641200}, // lacks EU, JP
+    {"842",    "842_a_new_day",                     0x0e4bd400, 0x0E747A00, 0x0e4bd400}, // lacks JP
+    {"843",    "843_the_usual_spot",                0x0e641200, 0x0E8CB800, 0x0e641200}, // lacks JP
     {"845",    "845_the_dark_margin_sora_whisper",  0x0e6fa600, 0x0e6fa600, 0x0e6fa600}, // lacks EU, JP
-    {"846",    "846_axel_and_saix",                 0x0e75bc00, 0x0e75bc00, 0x0e75bc00}, // lacks EU, JP
-    {"847",    "847_roxas_leaves_the_organization", 0x0e9c2000, 0x0e9c2000, 0x0e9c2000}, // lacks EU, JP
-    {"848",    "848_xions_end",                     0x0eb91800, 0x0eb91800, 0x0eb91800}, // lacks EU, JP
+    {"846",    "846_axel_and_saix",                 0x0e75bc00, 0x0E9E6200, 0x0e75bc00}, // lacks JP
+    {"847",    "847_roxas_leaves_the_organization", 0x0e9c2000, 0x0EC4C600, 0x0e9c2000}, // lacks JP
+    {"848",    "848_xions_end",                     0x0eb91800, 0x0EE1BE00, 0x0eb91800}, // lacks JP
+};
+
+DialogueEntry Dialogues[] =
+{
+    {"hd006" ,  1 , 1 , 0 , 0 , false, 0x0225ABD9 , 0x4C00610074006500},
+    {"hd008" ,  7 , 1 , 0 , 0 , false, 0x0229FFB0 , 0x47006F0020007400 , "hd009"},
+    {"hd010" , 11 , 1 , 0 , 0 , false, 0x02280904 , 0x5900650061006800},
+    {"hd018" , 13 , 1 , 0 , 0 , true , 0x021CC5D8 , 0x4927766520676F74},
+    {"hd019" , 13 , 1 , 0 , 0 , true , 0x021CB8DC , 0x4D6F6E206E6F6D2E},
+    {"hd020" , 14 , 1 , 0 , 0 , true , 0x021CCCDC , 0x426F6E6E65206368},
+    {"hd021" , 14 , 1 , 0 , 0 , true , 0x021CB6E0 , 0x57686F6121205869 , "hd022"},
+    {"hd025" , 15 , 1 , 0 , 0 , true , 0x021D186D , 0x776865726520646F},
+    {"hd034" , 20 , 1 , 0 , 0 , true , 0x021CD018 , 0x4865792C20526F78 , "hd035"},
+    {"hd039" , 21 , 1 , 0 , 0 , false, 0x021c3310 , 0x5900750070002E00},
+    {"hd043a", 23 , 1 , 0 , 0 , true , 0x021D05DC , 0x526F786173203F00},
+    {"hd043b", 23 , 1 , 0 , 0 , true , 0X021CF40C , 0X5427617572617320 , "hd044"},
+    {"hd048b", 29 , 1 , 0 , 0 , false, 0x022004D0 , 0x570065006C006C00},
+    {"hd050" , 30 , 1 , 0 , 0 , false, 0x0227CF50 , 0x4200750074002000 , "hd051"},
+    {"hd054" , 31 , 1 , 0 , 0 , true , 0x022140F8 , 0x5468616E6B732C20 , "hd055"},
+    {"hd059" , 36 , 1 , 0 , 0 , true , 0x021CD264 , 0x4865792C20646F6E},
+    {"hd063" , 37 , 1 , 0 , 0 , true , 0x0229B8F0 , 0x59006F0075002700 , "hd064"},
+    {"hd065" , 42 , 1 , 0 , 0 , false, 0x022AB56C , 0x4800750068003F00 , "hd066a"},
+    {"hd066b", 42 , 1 , 0 , 0 , true , 0x021CE9A4 , 0x486527732077726F},
+    {"hd068" , 43 , 1 , 0 , 0 , false, 0x021D3D68 , 0x4900270064002000},
+    {"hd070" , 44 , 1 , 0 , 0 , false, 0x021D5E80 , 0x4F006B0061007900},
+    {"hd071" , 44 , 1 , 0 , 0 , true , 0x021D04E8 , 0x506575742DC3AA74},
+    {"hd076" , 51 , 1 , 0 , 0 , false, 0x0227B770 , 0x490020006A007500 , "hd077"},
+    {"hd082a", 56 , 1 , 0 , 0 , true , 0x021CCCCC , 0x58696F6E20210000},
+    {"hd082b", 56 , 1 , 0 , 0 , true , 0x021CD100 , 0x4927766520676F74},
+    {"hd084" , 56 , 1 , 0 , 0 , true , 0x021CD190 , 0x536F72612E2E2E00 , "hd085" , 0 , 0 , "hd086a"},
+    {"hd087" , 61 , 1 , 0 , 0 , false, 0x022A0B58 , 0x430027006D006F00},
+    {"hd092" , 65 , 1 , 0 , 0 , true , 0x021CEDC8 , 0x5468656E2E2E2E49},
+    {"hd096" , 73 , 1 , 0 , 0 , true , 0x022472BC , 0x49742773206E6F20}
 };
 
 #define SequentialCutscenesSize 3
@@ -503,6 +536,8 @@ bool PluginKingdomHeartsDays::shouldRenderFrame(melonDS::NDS* nds)
 
 int PluginKingdomHeartsDays::detectGameScene(melonDS::NDS* nds)
 {
+    //printf("Game scene: %d\n",  GameScene);
+
     // printf("0x02194CBF: %08x %08x\n", nds->ARM7Read32(0x02194CBF), nds->ARM7Read32(0x02194CC3));
 
     // Also happens during intro, during the start of the mission review, on some menu screens; those seem to use real 2D elements
